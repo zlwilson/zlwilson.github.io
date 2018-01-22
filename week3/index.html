@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 3</title>
+	<link id="whichstyle" rel="stylesheet" type="text/css" href="basic.css">
+	<script type="text/javascript">
+	    function myFunction() {
+			// number of theory templates
+			var numTemplates = 5;
+			
+			// user input from text field
+			var input = document.getElementById('txtInput').value;
+    		
+    		// replace all NOUNs with input
+    		var list = document.getElementsByClassName("noun");
+    		for (var i = 0; i < list.length; i++) {
+    			list[i].innerHTML = input;
+    		} 
+
+    		// hide the header
+    		// document.getElementById('header').style.display = 'none';
+
+    		// get a random template, hide others
+    		var randTemplate = Math.floor((Math.random() * numTemplates));
+    		var types = document.getElementsByClassName("page");
+    		for (var i = 0; i < numTemplates; i++) {
+    			types[i].style.display = 'none';
+    		}
+    		types[randTemplate].style.display = 'block';
+
+    		// get a random style sheet
+    		var randStyle = Math.floor((Math.random() * numTemplates));
+			var sheet = "conspiracystyle" + randStyle + ".css";
+    		var style = document.getElementById("whichstyle");
+    		style.href = sheet;
+
+    		// set random colors
+    		var list = document.getElementsByClassName("title");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.color = getRandomColor();
+    		}
+    		var list = document.getElementsByClassName("subtitle");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.color = getRandomColor();
+    		}
+    		var list = document.getElementsByClassName("subsubtitle");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.color = getRandomColor();
+    		}
+    		var list = document.getElementsByClassName("justtext");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.color = getRandomColor();
+    		}
+			var list = document.getElementsByClassName("images");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.borderColor = getRandomColor();
+    		}
+    		document.getElementById('content').style.backgroundColor = getRandomColor();
+		}
+	</script>
+</head>
+
+<body>
+	<div id="outermostwrapper">
+	   <div id="content">
+           <img src="">
+       </div>
+	</div>
+</body>
+</html>
