@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conspiracy Theory Generator</title>
+	<link id="whichstyle" rel="stylesheet" type="text/css" href="starter.css">
+	<script type="text/javascript">
+	    function getRandomColor() {
+		  var letters = '3456789ABC';
+		  var color = '#';
+		  for (var i = 0; i < 6; i++) {
+		    color += letters[Math.floor(Math.random() * 10)];
+		  }
+		  return color;
+		}
+
+		function myFunction() {
+			// number of theory templates
+			var numTemplates = 5;
+			
+			// user input from text field
+			var input = document.getElementById('txtInput').value;
+    		
+    		// replace all NOUNs with input
+    		var list = document.getElementsByClassName("noun");
+    		for (var i = 0; i < list.length; i++) {
+    			list[i].innerHTML = input;
+    		} 
+
+    		// hide the header
+    		// document.getElementById('header').style.display = 'none';
+
+    		// get a random template, hide others
+    		var randTemplate = Math.floor((Math.random() * numTemplates));
+    		var types = document.getElementsByClassName("page");
+    		for (var i = 0; i < numTemplates; i++) {
+    			types[i].style.display = 'none';
+    		}
+    		types[randTemplate].style.display = 'block';
+
+    		// get a random style sheet
+    		var randStyle = Math.floor((Math.random() * numTemplates));
+			var sheet = "conspiracystyle" + randStyle + ".css";
+    		var style = document.getElementById("whichstyle");
+    		style.href = sheet;
+
+    		// set random colors
+    		var list = document.getElementsByClassName("title");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.color = getRandomColor();
+    		}
+    		var list = document.getElementsByClassName("subtitle");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.color = getRandomColor();
+    		}
+    		var list = document.getElementsByClassName("subsubtitle");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.color = getRandomColor();
+    		}
+    		var list = document.getElementsByClassName("justtext");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.color = getRandomColor();
+    		}
+			var list = document.getElementsByClassName("images");
+    		for (var i = 0; i < list.length; i++) {
+    			console.log(getRandomColor());
+    			list[i].style.borderColor = getRandomColor();
+    		}
+    		document.getElementById('content').style.backgroundColor = getRandomColor();
+		}
+	</script>
+</head>
+
+<body>
+	<div id="outermostwrapper">
+		<div id="header">
+			<h4>Create your own Conspiracy Theory</h4>
+
+			<h5>by: Zack Wilson</h5>
+
+			<h6>Enter any noun to generate a website that will tell you the TRUTH:</h6>
+			<div style="padding-left: 10px;">
+				<input type="text" id="txtInput" value="">
+				<button onclick="myFunction()" id="findNow">Go!</button>
+			</div>
+		</div>
+	    
+	   	<div id="content">
+	   		<div class="page" style="display: none;">
+				<h1 class="title">Bizzare Secret Messages in Google Translator! <b class="noun" style="text-transform: uppercase;">NOUN</b>!</h1>
+
+				<div style="float: left;">
+					<img class="images" src="http://2.bp.blogspot.com/-jNH9IXu8X3k/TfD-Zqs5YTI/AAAAAAAABCE/M3rJ3bcCrFo/s400/egyptianpyramidsart21.jpg" width="60%" style="margin: 0px 0px 0px 15px; border: 2px solid white;">
+				</div>
+
+				<p class="justtext">Spooky stuff guys.</p>
+
+				<p class="justtext">Go to Google Translate Set to Somali to English Keep typing <b class="noun">NOUN</b>.</p>
+
+				<p class="justtext"><a onclick="myFunction()" style="color: blue; text-decoration: underline;">Proceed to freak out.</a></p>
+
+				<p class="justtext">SPERGING a message about all the people of the world abandoning their idols to worship Israel and garner favor with The Creator</p>
+
+				<p class="justtext">PEPE? suddenly <b class="noun">NOUN</b>s are trying to eat me</p>
+
+				<h2 class="subtitle">"Over the centuries, the people of the city were gathered togethe, All'gether by-by come-worship belong all'gether people worship all'gether mankind, the people who live in the pagan world.</h2>
+
+				<h2 class="subtitle"><b class="noun">NOUN</b> on the Mount of Bounty"</h2>
+
+				<h3 class="subsubtitle">"I now feel like a person of Israel. 
+
+				My eyes have lifted. 
+
+				We were welcomed, from <b class="noun">NOUN</b> to <b class="noun" style="text-transform: uppercase;">NOUN</b>. 
+
+				The people of Israel are from all nations. 
+
+				The people of Israel are from all ethnic groups. 
+
+				It is now my duty to honor and celebrate the people of Israel. 
+
+				Thank you for bringing this fate to my attention."</h3>
+
+				<img class="images" src="http://www.ancientegypt.co.uk/pyramids/story/images/pyramid.jpg" width="50%" style="display: block; margin: auto; border: 2px solid white; align: center;">
+			</div>
+			<div class="page" style="display: none;">
+				<h1 class="title"><b class="noun" style="text-transform: uppercase;">NOUN</b> to really cause mass extinction this month?!</h1>
+
+				<p class="justtext">The elusive <b class="noun">NOUN</b>, or Nibiru, with its unimaginably long 27-million-year hiSTORY, is still only a theory to many. But one astrophysicist believes it spells doom for Earth. Nibiru’s arrival this month, he says, will bring about a mass extinction of untold proportions.</p>
+
+				<div style="float: right;">
+					<img class="images" src="https://sno.phy.queensu.ca/group/pics/ParticleAstro.jpg" width="60%" style="margin: 0px 0px 0px 15px; border: 2px solid #00FF1E;">
+				</div>
+
+				<h2 class="subtitle">Ancient Sumerian writings first documented <b class="noun">NOUN</b>'s supposed existence, as did other ancient civilizations. But our inAbility to study it firmly placed the DOOMSday scenarios into the <a onclick="myFunction()" style="color: blue; text-decoration: underline;">conspiracy-Theory</a> category.</h2>
+
+				<p class="justtext">Earlier this year we started seeing SPACE anomalies MANifesting in a small group of objects, which have been taking on a peculiar orbit.</p>
+
+				<p class="justtext">Only something 10! times the size of the <b class="noun">NOUN</b> – as theorized with Nibiru – could influence celestial objects in such a way, according to a study from Caltech. The <b class="noun">NOUN</b> was picked up on in the Kuiper Belt, which stretches all the way past Neptune.</p>
+
+				<h3 class="subsubtitle">something wiped out almost all life once in every 27 million years</h3>
+
+				<img class="images" src="https://i.ytimg.com/vi/IwttTV5YpIc/hqdefault.jpg" width="60%" style="margin:auto; display: block; border: 2px solid #00FF1E;">
+
+				<h2 class="subtitle">dating back at least 250 million years.</h2>
+			</div>
+			<div class="page" style="display: none;">
+				<h1 class="title">DIVINE COSmos</h1>
+
+				<h1>Something Very Big, Part III: <b class="noun" style="text-transform: uppercase;">NOUN</b> Sign of Impending Cabal Defeat?</h1>
+
+				<p>49 top Saudi officials were arrested and hundreds more have had their bank accounts seized, beginning on November 4th.</p>
+
+				<div style="float: right;">
+					<img class="images" src="https://thumb9.shutterstock.com/display_pic_with_logo/436114/512122552/stock-vector-defeat-stamp-red-round-defeat-grunge-vintage-stamp-defeat-512122552.jpg" width="40%" style="margin: 0px 0px 0px 15px; border: 2px solid yellow;">
+				</div>
+
+				<p>Once we understand that these individuals were coordinating <b class="noun">NOUN</b>, 9/11 and other "false flag" attacks for the Cabal, the significance of these arrests becomes quite AweSOME.</p>
+
+				<p>The image is of some of <b class="noun">NOUN</b> while trying to sleep on tiny cots and SINGLE blankets!!</p>
+
+				<p>Under the bright LiGHTs of the Ritz Carlton Hotel in Saudi Arabia</p>
+
+				<p>This is only one of dozens of explosive news stories all suggesting...</p>
+
+				<h2>YOU GUESSED IT...</h2>
+
+				<p>Something Very Big is Coming, as we forecasted in Parts <a onclick="myFunction()" style="color: blue; text-decoration: underline;">One</a> and <a onclick="myFunction()" style="color: blue; text-decoration: underline;">Two</a>.</p>
+
+				<p>We have been granted the privilege of sharing new briefing details that are mission-CRITICAL and have not yet appeared anywhere else in quite this form.</p>
+
+				<p>This is going to be a shorter article than the previous rounds as there are many distractions occurring in the immediate term -- but this needs to GET OUT.</p>
+
+				<h3>UPDATED: Same Night, Next Morning: Do not miss! Red <b class="noun">NOUN</b>s near the end.</h3>
+			</div>
+			<div class="page" style="display: none;">
+				<h1 class="title">NONE DARE CALL <b class="noun" style="text-transform: uppercase;">NOUN</b> CONSPIRACY</h1>
+
+				<h3>"This <b class="noun">NOUN</b> (the Federal Reserve Act)</h3>
+				<img class="images" src="http://2.bp.blogspot.com/-mz2_U8nuEec/UTIhnkZzVSI/AAAAAAAAAk0/QXSFAbjmFbo/s1600/depositphotos_11853019-Federal-Reserve-System-Logo.jpg" width="30%" style="float: right; margin: 15px 15px 15px 15px; border: 2px solid white;">
+				<h3>establishes the most gigantic trust on Earth...</h3> 
+				<h3>When the <b class="noun">NOUN</b>,</h3>
+				<h3>the invisible government by the money power,</h3>
+				<h3>proven to exist by the Money Trust Investigation,</h3>
+				<h3>will be legalized...</h3>
+				<h3>               The new <b class="noun">NOUN</b> will create inflation</h3>
+				<h3>            whenever the <b class="noun">NOUN</b>s want inflation..."</h3>
+				<div style="display: inline-block;">
+					<img class="images" src="http://www.youbethejudgeandjury.com/images/charles_lindbergh_sr2.gif" height="30%" style="float: left; margin: 15px 15px 15px 15px; border: 2px solid white;">
+					<h2>Congressman Charles A. Lindbergh Sr.</h2>
+					<h2>December, 1913</h2>
+				</div>
+				
+				<p>The first few <b class="noun">NOUN</b>s contain preparatory information to acclimate the <a onclick="myFunction()" style="color: blue; text-decoration: underline;">uninitiated,</a></p>
+
+				<p>followed by deeply into historical information AGENDAS of the little-known global Elite <b class="noun">NOUN</b>.</p>
+
+				<p>Surprisingly to many, the <b class="noun">NOUN</b> is the Establishment insider! Responsible for secretively establishing the TOTALitarian Communist regimes in Russia, China, and the WORLD</p>
+
+				<p><b class="noun" style="text-transform: uppercase;">NOUN</b> is exPLANEd how globalist philosophies which are currently implemented. Call a similar uniform system of government, eventually imposed on the entire populace of the planet in a totalitarian</p>
+
+				<h1>”New World Order”</h1>
+			</div>
+			<div class="page" style="display: none;">
+				<h1 class="title"><b class="noun" style="text-transform: uppercase;">NOUN</b>: The Powerful CULT That Turns Rich Women Into Mind Controlled Slaves</h1>
+
+				<p><b class="noun">NOUN</b> has been recruiting and brainwashing people for the past two decades, subjecting its participants to horrific abuse in order to break them down. Using the natural charisma of Keith Raniere, the NLP knowledge of Nancy Salzman, and the elite money of Sara and Clare Bronfman, the organization has become a high-powered cult, apparently operating above <a onclick="myFunction()" style="color: blue; text-decoration: underline;">the law</a>.</p>
+
+				<p>After years of revelations being all but ignored by the MEDIA and LAW enforcement, recent stories appear to have finally blown the organization’s cover as a “multi-level marketing organization”. However, many unsolved mysteries remain and ONE can easily wonder if this is just the tip of a very dark iceberg.</p>
+				<div style="display: inline-block; margin: auto;">
+					<img class="images" src="https://politicalconnection.files.wordpress.com/2012/10/mkultra.jpg" width="30%" style="float: right; margin: 15px 15px 15px 15px; border: 1px solid white;">
+					<h3>Rituals and trauma-inducing techniques taken directly from the MK-ULTRA handbook.</h3>
+				</div>
+
+				<p><a onclick="myFunction()" style="color: blue; text-decoration: underline;">These revelations</a> prove that ELITE <b class="noun">NOUN</b>s can and do use ritualistic mind-control techniques to create mind-controlled SLAVEs, and, further, that these techniques actually work. The stories here are of real women and their real experience with a REAL, operating <b class="noun">NOUN</b>. This is not a “conspiracy theorY”.</p>
+
+				<h2><b class="noun" style="text-transform: uppercase;">NOUN</b> is a fact.</h2>
+				<img class="images" src="https://archive.org/download/MkUltraTodesstrahlenMircowellenGehirnschrittmacherUndDerAnti-christ/MkUltraTodesstrahlenMircowellenGehirnschrittmacherUndDerAnti-christ.gif" width="20%" style="display: block; margin: auto; border: 1px solid white;">
+			</div>
+	   	</div>
+	
+	</div>
+
+</body>
+</html>

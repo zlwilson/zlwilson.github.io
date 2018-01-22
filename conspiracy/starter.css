@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 100%;
+	color: #000;
+	text-align: center;
+	background-color: #000;
+}
+p {
+    color: #666;
+    font-size: 16px;
+    font-family: "Courier", Courier, sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+}
+h1 {
+    color: #dd737d;
+    font-family: "Courier", Courier, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 4px;
+}
+h2 {
+    font-size: 18px;
+    color: #dd737d;
+    font-family: "Courier", Courier, sans-serif;
+    font-weight: normal;
+    margin: 0.83em 0 0;
+    padding: 10px 0px 10px 0px;
+}
+h3 {
+    color: #485e93;
+    font-family: "Courier", Courier, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 4px;
+}
+h4 {
+    font-weight: 200;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: -15px;
+    margin-top: 10px;
+    font-size: 26px;
+}
+h5 {
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: -15px;
+    font-size: 18px;
+}
+h6 {
+    font-weight: 200;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+a {
+    color: #666;
+    text-decoration: underline;
+}
+#outermostwrapper {
+    text-align: left;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 0;
+    background-color: #000;
+}
+#header {
+    width:100%;
+    height:180px;
+    z-index:1;
+    background-color: white;
+    border-width: 10px; 
+    border-style: solid;
+    border-color: rgb(70, 70, 100);
+}
