@@ -4,6 +4,26 @@
 	<title>Week 3</title>
 	<link id="whichstyle" rel="stylesheet" type="text/css" href="basic.css">
 	<script type="text/javascript">
+        function thetimer() {
+           var timerDiv = document.getElementById("timer");
+           var contentDiv = document.getElementById("content");
+           var overDiv = document.getElementById("over");
+           var objToday = new Date();
+           var m = objToday.getTime();
+           if (m < 1516738800000) {
+            timerDiv.style.display = 'inline';
+            overDiv.style.display = 'none';
+           } else {
+            timerDiv.style.display = 'none';
+            contentDiv.style.display = 'none';
+            overDiv.style.display = 'inline';
+           }
+        }
+
+        function loadImages(){
+            
+        }
+
 	    function myFunction() {
 			// number of theory templates
 			var numTemplates = 5;
@@ -65,11 +85,18 @@
 	</script>
 </head>
 
-<body>
+<body onload="thetimer()">
 	<div id="outermostwrapper">
-	   <div id="content">
+        <div id="timer">
+            <iframe src="http://free.timeanddate.com/countdown/i62w6syb/n256/cf13/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatThis%20website%20will%20no/tac000/tpc000/matlonger%20be%20active%20in%3A/mac000/mpc000/iso2018-01-23T12:30:00" allowTransparency="true" frameborder="0" width="179" height="114"></iframe>
+        </div>
+        
+	    <div id="content">
            <img src="">
-       </div>
+        </div>
+        <div id="over">
+           <h3>This website is over.</h3>
+        </div>
 	</div>
 </body>
 </html>
