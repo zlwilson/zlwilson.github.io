@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 100%;
+	color: #000;
+	text-align: center;
+	background-color: #000;
+}
+p {
+    color: #666;
+    font-size: 16px;
+    font-family: "Courier", Courier, sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+}
+h1 {
+    color: #dd737d;
+    font-family: "Courier", Courier, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 4px;
+}
+h2 {
+    font-size: 18px;
+    color: #dd737d;
+    font-family: "Courier", Courier, sans-serif;
+    font-weight: normal;
+    margin: 0.83em 0 0;
+    padding: 10px 0px 10px 0px;
+}
+h3 {
+    color: #485e93;
+    font-family: "Courier", Courier, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 4px;
+}
+h4 {
+    font-weight: bold;
+    text-align: center;
+    margin: 1.33em 0;
+}
+a {
+    color: #666;
+    text-decoration: underline;
+}
+hr {
+    border-top: thin solid #666;
+    width: 50%;
+}
+#nav-bar ul {
+    list-style-type: none;
+    margin-left: 15%;
+    margin-right: auto;
+    padding: 0;
+    overflow: hidden;
+}
+#nav-bar li {
+    float:left;
+    width:20%;
+}
+#nav-bar li a {
+    display: block;
+    color: #dd737d;
+    font-family: "Courier", Courier, sans-serif;
+    text-align: center;
+    padding: 80px 0px 10px 0px;
+    text-decoration: none;
+    border-bottom: solid #666;
+}
+#nav-bar li a:hover {
+    color: #dd737d;
+    border-bottom: solid #dd737d;
+}
+#outermostwrapper {
+    text-align: left;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 0;
+    background-color: #000;
+}
+#header {
+    width:100%;
+    height:110px;
+    z-index:1;
+}
+#content {
+    width:50%;
+    z-index:2;
+    float: right;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+#caption {
+    width: 25%;
+    margin-left: 100px;
+    margin-top: 80px;
+    float:left;
+}
+#resume td {
+    padding: 50px 50px 50px 50px;
+}
+.contentlist li {
+    color: #666;
+    font-size: 16px;
+    font-family: "Courier", Courier, sans-serif;
+    font-weight: normal;
+    margin: 20px 20px 0px 20px;
+}
+#contact td {
+    padding: 50px 50px 50px 50px;
+}
+#contact li {
+    color: #666;
+    font-size: 16px;
+    font-family: "Courier", Courier, sans-serif;
+    font-weight: normal;
+    margin: 20px 20px 0px 20px;
+}
+#under-construction {
+    border-top: thin solid #666;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 60px;
+    text-align: center;
+    font-style: italic;
+}
