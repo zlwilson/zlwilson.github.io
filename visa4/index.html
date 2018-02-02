@@ -1,0 +1,125 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Sortable jQuery Plugin</title>
+	<style>
+		header, section {
+			display: block;
+		}
+		body {
+			font-family: 'Droid Serif';
+		}
+		h1, h2 {
+			text-align: center;
+			font-weight: normal;
+		}
+		#features {
+			margin: auto;
+			width: 460px;
+			font-size: 0.9em;
+		}
+		.connected, .sortable, .exclude, .handles {
+			margin: auto;
+			padding: 0;
+			width: 310px;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.sortable.grid {
+			overflow: hidden;
+		}
+		.connected li, .sortable li, .exclude li, .handles li {
+			list-style: none;
+			border: 1px solid #CCC;
+			background: #F6F6F6;
+			font-family: "Tahoma";
+			color: #1C94C4;
+			margin: 5px;
+			padding: 5px;
+			height: 60px;
+		}
+		li.highlight {
+			background: #FEE25F;
+		}
+		#connected {
+			width: 440px;
+			overflow: hidden;
+			margin: auto;
+		}
+		.connected {
+			float: left;
+			width: 200px;
+		}
+		.connected.no2 {
+			float: right;
+		}
+		li.sortable-placeholder {
+			border: 1px dashed #CCC;
+			background: none;
+		}
+	</style>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header>
+		<h1>Fantastical Beasts</h1>
+	</header>
+	<section>
+		<h2>Guide</h2>
+		<ul id="features">
+			<li>Drag the beast below to order them from most to least likely to exist:</li>
+		</ul>
+	</section>
+	<section id="connected">
+		<ul class="connected list">
+			Most –––<li><img src="https://abovethelaw.com/wp-content/uploads/2011/11/zombie-lawyer.jpg" height="60"> Zombies</li>
+			<li><img src="http://mysticinvestigations.com/supernatural/wp-content/uploads/2011/01/abominable-snowman-yeti.jpg" height="60"> Yeti</li>
+			<li><img src="" height="60"> Angels</li>
+			<li><img src="" height="60"> Demons</li>
+			<li><img src="" height="60"> Dragons</li>
+			<li><img src="" height="60"> Pixies</li>
+			<li><img src="" height="60"> Ghosts</li>
+			<li><img src="" height="60"> Harpies</li>
+			<li><img src="" height="60"> Elves</li>
+			<li><img src="" height="60"> Mermaids</li>
+		</ul>
+		<ul class="connected list no2">
+			<p></p>
+			<p></p>
+			<li><img src="" height="60">  Giants</li>
+			<li><img src="" height="60">  Leviathan</li>
+			<li><img src="" height="60">  Pegasus</li>
+			<li><img src="" height="60">  Centaurs</li>
+			<li><img src="" height="60">  Unicorns</li>
+			<li><img src="https://freedomshammer.files.wordpress.com/2012/01/loch-ness.jpg?w=1000" height="60" width="60">Loch Ness Monster</li>
+			<li><img src="" height="60">  Tooth Fairy</li>
+			<li><img src="" height="60">  Phoenix</li>
+			<li><img src="" height="60">  Werewolves</li>
+			<li><img src="" height="60">  Vampires</li>
+			<li><img src="" height="60">  Genies</li>
+			<p style="text-align: right;">––– Least</p>
+		</ul>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="jquery.sortable.js"></script>
+	<script>
+		$(function() {
+			$('.sortable').sortable();
+			$('.handles').sortable({
+				handle: 'span'
+			});
+			$('.connected').sortable({
+				connectWith: '.connected'
+			});
+			$('.exclude').sortable({
+				items: ':not(.disabled)'
+			});
+		});
+	</script>
+</body>
+</html>
