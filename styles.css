@@ -8,7 +8,7 @@ body {
 	background-color: #000;
 }
 p {
-    color: #666;
+    color: #888;
     font-size: 16px;
     font-family: "Courier", Courier, sans-serif;
     font-weight: normal;
@@ -44,7 +44,7 @@ h4 {
     margin: 1.33em 0;
 }
 a {
-    color: #666;
+    color: #dd737d;
     text-decoration: underline;
 }
 hr {
