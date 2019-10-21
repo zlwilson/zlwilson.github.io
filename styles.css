@@ -5,17 +5,17 @@ body {
 	font-size: 100%;
 	color: #000;
 	text-align: center;
-	background-color: #000;
+	background-color: #FFF;
 }
 p {
-    color: #888;
+    color: #000;
     font-size: 16px;
     font-family: "Courier", Courier, sans-serif;
     font-weight: normal;
     margin-top: 0;
 }
 h1 {
-    color: #dd737d;
+    color: #017B76;
     font-family: "Courier", Courier, sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -24,7 +24,7 @@ h1 {
 }
 h2 {
     font-size: 18px;
-    color: #dd737d;
+    color: #017B76;
     font-family: "Courier", Courier, sans-serif;
     font-weight: normal;
     margin: 0.83em 0 0;
@@ -44,8 +44,13 @@ h4 {
     margin: 1.33em 0;
 }
 a {
-    color: #dd737d;
+    color: #017B76;
     text-decoration: underline;
+}
+.fakelink {
+    color: #017B76;
+    text-decoration: underline;
+    font-family: "Courier", Courier, sans-serif;
 }
 hr {
     border-top: thin solid #666;
@@ -64,7 +69,7 @@ hr {
 }
 #nav-bar li a {
     display: block;
-    color: #dd737d;
+    color: #017B76;
     font-family: "Courier", Courier, sans-serif;
     text-align: center;
     padding: 80px 0px 10px 0px;
@@ -72,8 +77,8 @@ hr {
     border-bottom: solid #666;
 }
 #nav-bar li a:hover {
-    color: #dd737d;
-    border-bottom: solid #dd737d;
+    color: #017B76;
+    border-bottom: solid #017B76;
 }
 #outermostwrapper {
     text-align: left;
@@ -82,7 +87,7 @@ hr {
     margin-left: auto;
     position: relative;
     z-index: 0;
-    background-color: #000;
+    background-color: #FFF;
 }
 #header {
     width:100%;
@@ -99,11 +104,11 @@ hr {
 #caption {
     width: 25%;
     margin-left: 100px;
-    margin-top: 80px;
+    margin-top: 20vh;
     float:left;
 }
 #resume td {
-    padding: 50px 50px 50px 50px;
+    padding: 50px 0px 50px 0px;
 }
 .contentlist li {
     color: #666;
