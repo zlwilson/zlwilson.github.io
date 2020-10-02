@@ -103,14 +103,14 @@ hr {
     z-index:1;
 }
 #content {
-    width:50%;
+    width:55%;
     z-index:2;
     float: right;
     margin-right: 50px;
     margin-top: 40px;
 }
 #caption {
-    width: 25%;
+    width: 22%;
     margin-left: 100px;
     margin-top: 20vh;
     float:left;
