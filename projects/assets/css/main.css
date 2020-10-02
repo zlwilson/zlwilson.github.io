@@ -9,6 +9,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		color: #000000;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1401,8 +1402,8 @@
 	}
 
 	body {
-		background-color: #000;
-		background-image: url("../../bg.jpg");
+		background-color: #FFF;
+		/*background-image: url("../../bg.jpg");*/
 		background-size: cover;
 		background-position: top center;
 	}
@@ -1422,7 +1423,7 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.65);
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Courier", Courier, sans-serif;
 		font-size: 13pt;
 		font-weight: 200;
 		line-height: 1.65;
@@ -1447,12 +1448,12 @@
 	}
 
 		a:hover {
-			color: #ffffff;
+			color: #000;
 			border-bottom-color: transparent;
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #000;
 		font-weight: 200;
 	}
 
@@ -1465,7 +1466,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000;
 		font-weight: 200;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -1633,7 +1634,7 @@
 	}
 
 	label {
-		color: #ffffff;
+		color: #000;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 200;
@@ -1691,7 +1692,7 @@
 			content: "";
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: "Courier", Courier, sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -1756,7 +1757,7 @@
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: "Courier", Courier, sans-serif;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -1782,7 +1783,7 @@
 		input[type="radio"]:checked + label:before {
 			background: #FF6382;
 			border-color: #FF6382;
-			color: #ffffff;
+			color: #000;
 			content: '\f00c';
 		}
 
@@ -1857,7 +1858,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: "Courier", Courier, sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -2391,8 +2392,8 @@
 			margin: 0 0 2em 0;
 			text-align: center;
 			border-radius: 4px;
-			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
-			background-color: rgba(255, 255, 255, 0.075);
+			box-shadow: inset 0 0 0 1px rgba(1, 123, 118, 0.5);
+			background-color: rgba(1, 123, 118, 0.08);
 			cursor: pointer;
 			outline: 0;
 			overflow: hidden;
@@ -2516,7 +2517,7 @@
 				content: "";
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: "Courier", Courier, sans-serif;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -2527,8 +2528,8 @@
 				position: relative;
 				text-indent: 0;
 				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
-				color: #ffffff !important;
+				box-shadow: inset 0 0 0 1px #000;
+				color: #000 !important;
 				width: 2.5em;
 				height: 2.5em;
 				line-height: 2.5em;
@@ -2580,7 +2581,11 @@
 	}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.65);
+			color: rgba(1, 123, 118, 0.65);
+		}
+
+		#header p {
+			color: rgba(1, 123, 118, 0.65);
 		}
 
 		#header .avatar {
@@ -2588,8 +2593,8 @@
 			display: inline-block;
 			margin: 0 0 2em 0;
 			padding: 0.5em;
-			border: solid 1px rgba(255, 255, 255, 0.25);
-			background-color: rgba(255, 255, 255, 0.075);
+			border: solid 1px rgba(1, 123, 118, 0.25);
+			background-color: rgba(1, 123, 118, 0.075);
 		}
 
 			#header .avatar img {
