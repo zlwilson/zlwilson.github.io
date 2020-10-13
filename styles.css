@@ -115,8 +115,26 @@ hr {
     margin-top: 20vh;
     float:left;
 }
+/*
+    Resume page
+*/
 #resume td {
     padding: 50px 0px 50px 0px;
+}
+#resume h2 {
+    padding: 0px 0px 8px 0px;
+}
+#resume ul {
+    list-style-type: none;
+    /*padding: 0px 0px 0px 0px;*/
+}
+#resume ul li ul {
+    list-style-type: circle;
+    padding: 0px 0px 0px 10px;
+}
+#resume ul li ul li {
+    margin: 10px 0px 5px 20px;
+    color: #111;
 }
 
 /*
