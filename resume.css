@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+.resume {
+  width: 100%;
+}
+
+.resume-section {
+  padding: 3rem 0;
+}
+
+.resume-two-col {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.resume-label {
+  flex: 0 0 180px;
+}
+
+.resume-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.experience-list,
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.resume-item h2 {
+  margin: 0 0 0.35rem;
+}
+
+.resume-meta {
+  margin: 0 0 0.8rem;
+}
+
+.resume-item ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.resume-item li + li {
+  margin-top: 0.45rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.skill-group h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.skill-group ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.skill-group li + li {
+  margin-top: 0.35rem;
+}
+
+hr {
+  margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .resume-two-col {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .resume-label {
+    flex: none;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .resume-section {
+    padding: 2rem 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .resume-item ul,
+  .skill-group ul {
+    padding-left: 1rem;
+  }
+}

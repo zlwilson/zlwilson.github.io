@@ -1,69 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- <title>Zack Wilson</title> -->
-	<!-- <meta http-equiv="content-type" content="text/html;charset=utf-8" /> -->
-	<meta name="generator" content="Adobe GoLive" />
-	<title>Redirecting to new portfolio page</title>
-  	<meta http-equiv="refresh" content="0; URL=https://zlwilson.github.io/about/index.html">
-  	<link rel="canonical" href="https://zlwilson.github.io/about/index.html">
+	<title>Zack Wilson</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="icon" href="data:,">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script type="text/javascript">
-		function menuItem(x) {
-			switch (x) {
-				case 0:
-				document.getElementById('home');
-				document.getElementById('homeBtn').style.border;
-				break;
-				case 1:
-				document.getElementById('resume');
-				break;
-				case 2:
-				document.getElementById('portfolio');
-				break;
-				case 3:
-				document.getElementById('contact');
-				break;
-			}
-		}
-	</script>
+	<link rel="stylesheet" type="text/css" href="home.css">
 </head>
 
 <body>
-	<!--
 	<div id="outermostwrapper">
-		<div id="header">
-			<div id="nav-bar">
-				<ul>
-					<li><a href="index.html" id="homeBtn">Home</a></li>
-					<li><a href="resume.html" id="homeBtn">Resumé</a></li>
-					<li><a href="projects-all.html" id="projectsBtn">Portfolio</a></li>
-					<li><a href="contact.html" id="contactBtn">Contact</a></li>
-				</ul>
+		<header class="header">
+			<h1 class="title">Zack Wilson</h1>
+			<nav class="nav">
+				<a href="index.html" id="homeBtn">Home</a>
+				<a href="about.html" id="aboutBtn">About</a>
+			</nav>
+		</header>
+		<section class="portfolio-section">
+			<div class="portfolio-track">
+				<button
+				class="portfolio-item"
+				data-title="SNOWMASTER: Ski Resort Management"
+				data-year="2022 – 2025"
+				data-client="TechnoAlpin"
+				data-role="UX Designer → Project Lead"
+				data-tools="User Research, Product Strategy, UX Design, UI Design"
+				data-description="
+				<p>
+					SNOWMASTER is a digital platform for managing snowmaking operations in ski resorts. To redefine the product, we conducted extensive field research with snowmakers across 10 ski resorts in 8 countries, uncovering the realities of mobile, high-pressure work on the mountain.
+				</p>
+				<p>
+					Based on these insights, we developed a user-centered product vision and redesigned the system into a mobile-first experience with a clear, layered information structure. The result is a streamlined interface that supports both quick decision-making and deeper operational control across the entire snowmaking process.
+				</p>
+				<p>
+					<a href='https://www.technoalpin.com/en/total-solution/snowmaster-management-software/' target='_blank'>snowmaster.io</a>
+				</p>"
+				data-image="media/snowmaster-design.png"
+				>
+				<img src="media/snowmaster.png" alt="Snowmaster resort management software" />
+			</button>
+
+			<button
+			class="portfolio-item"
+			data-title="Digitalization for Construction"
+			data-year="2023 - 2025"
+			data-client="Arge Baustahl Blasy"
+			data-role="UX Designer → Project Lead"
+			data-tools="User Research, Journey Mapping, UX Design, UI Design"
+			data-description="
+			<p>
+				ARGE Baustahl Blasy is a construction company specializing in reinforced steel processing. To improve efficiency in complex, multi-stakeholder workflows, we supported the digitalization of their core processes through a progressive web app.
+			</p>
+			<p>
+				Based on workshops and user journey mapping, we designed a cross-platform application for on-site and office use, enabling project coordination, time tracking and communication. The result is a scalable digital workflow that is used daily by employees and continuously evolving based on user and business needs.
+			</p>"
+			data-image="media/blasy-all.png"
+			>
+			<img src="media/blasy.png" alt="Blasy VerlegeApp: PM for Construction" />
+		</button>
+
+		<button
+		class="portfolio-item"
+		data-title="Luloop: Circular Revolution"
+		data-year="2023"
+		data-client="Luloop"
+		data-role="Design Lead"
+		data-tools="User Research, Business Strategy, Service Design, Prototyping"
+		data-description="
+		<p>
+			Luloop is a new reusable container system developed in response to brand new EU regulations regarding single-use food-containers. Within a 5-day design sprint, we developed a complete business model, service concept and initial digital prototype, to enable a lightning-fast market entry.
+		</p>
+		<p>
+			The solution includes a complete pickup and return system for reusable containers, through restaurants with a clear value proposition (and pricing) for gastronomy-partners and end-users.
+			Based on user research, we created a complete service blueprint and an app prototype, to position Luloop as a scalable, sustainable service-driven product.
+		</p>
+		<p>
+			Luloop has since been aquired by <a href='https://www.vytal.org' target='_blank'>Vytal</a>.
+		</p>"
+		data-image="media/luloop-design.png"
+		>
+		<img src="media/luloop.png" alt="Luloop landing page and app from design sprint" />
+	</button>
+</div>
+</section>
+<div>
+	<h3><br>More projects coming soon!<br></h3>
+</div>
+
+<div class="portfolio-overlay" id="portfolioOverlay">
+
+	<button class="close-modal" id="closeModal" aria-label="Close overlay">×</button>
+
+	<div class="portfolio-content">
+		<div class="portfolio-details">
+			<h2 id="modalTitle"></h2>
+			<p id="modalYear"></p>
+			<div class="portfolio-info">
+				<p><strong>Client:</strong> <span id="modalClient"></span></p>
+				<p><strong>Role:</strong> <span id="modalRole"></span></p>
 			</div>
+			<p><span id="modalTools"></span></p>
+			<div id="modalDescription"></div>
 		</div>
-		<div id="caption">
-			<h2>designer, artist, programmer;<br>computer science, human-computer interaction design, fine art.</h2>
-		</div>
-		<div id="content" align="right">
-			<p>
-				My name is Zack Wilson, a UX designer and researcher, with a background in design, fine art, and computer science.
-				My interests lie in the intersection of design, technology, and human behavior, and my design work, research, and art aims to explore these complex relationships.
-			</p>
-			<p>
-				I have worked in a variety of design roles, beginning in graphic and visual design, and gradually shifting to interaction and experience design with my passion and empathy for human- and user-oriented design.<br>
-				I have also worked in human-computer interaction labs in France and Canada, and exhibited artwork in Vancouver, the Netherlands, and Paris.
-			</p>
-			<p>
-				My education echoed my passions, beginning with studies in computer science, and evolving to encompass fine art and design, concluding with a Masters of Science in Human-Computer Interaction Design at the European Institute of Innovation and Technology.
-			</p>
-			<p>
-				I am currently working in the Human-Computer Interaction Lab at INRIA Paris, exploring the design process of embodied Creativity Support Tools.<br>
-				This work pulls together psychology and neuroscience literature on creativity and embodiment, then uses a human-centered design approach to prototype and test technologies to support professionals' creative processes.<br>
-			</p>
+		<div class="portfolio-image-wrap">
+			<img class="modal-image-ghost" id="modalImageGhost" src="" alt="" />
+			<img id="modalImage" src="" alt="" />
 		</div>
 	</div>
-	-->
-</body>
+</div>
 
+</div>
+
+<script src="portfolio.js"></script>
+</body>
 </html>
