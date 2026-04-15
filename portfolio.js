@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalRole = document.getElementById("modalRole");
   const modalTools = document.getElementById("modalTools");
 
+  const track = document.querySelector(".portfolio-track");
+  const desktopQuery = window.matchMedia("(min-width: 769px)");
+
   let activeThumb = null;
 
   function openOverlay(item) {
@@ -115,6 +118,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function shouldTranslateWheelToHorizontal() {
+    if (!track) return false;
+    if (overlay.classList.contains("active")) return false;
+    if (!desktopQuery.matches) return false;
+
+    const isHorizontallyScrollable = track.scrollWidth > track.clientWidth;
+    return isHorizontallyScrollable;
+  }
+
   items.forEach((item) => {
     item.addEventListener("click", () => openOverlay(item));
   });
@@ -133,20 +145,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const track = document.querySelector(".portfolio-track");
+  document.addEventListener(
+    "wheel",
+    (event) => {
+      if (!shouldTranslateWheelToHorizontal()) return;
 
-  if (track && window.innerWidth > 768) {
-    document.addEventListener(
-      "wheel",
-      (event) => {
-        if (overlay.classList.contains("active")) return;
+      const mostlyVerticalIntent =
+        Math.abs(event.deltaY) > Math.abs(event.deltaX);
 
-        if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
-          event.preventDefault();
-          track.scrollLeft += event.deltaY;
-        }
-      },
-      { passive: false }
-    );
-  }
+      if (!mostlyVerticalIntent) return;
+
+      event.preventDefault();
+      track.scrollLeft += event.deltaY;
+    },
+    { passive: false }
+  );
 });
