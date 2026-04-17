@@ -1,7 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
+@font-face {
+  font-family: 'League Spartan';
+  src: url('fonts/league-spartan.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 body {
-	font-family: "Courier", Courier, sans-serif;
+	font-family: "League Spartan", sans-serif;
 	line-height: 1.2em;
 	font-size: 100%;
 	color: #000;
@@ -12,13 +19,11 @@ p {
 	color: #000;
 	font-size: 1em;
 	line-height: 1.5em;
-	font-family: "Courier", Courier, sans-serif;
-	font-weight: normal;
+	font-weight: 300;
 	margin-top: 0;
 }
 h1 {
 	color: #017B76;
-	font-family: "Courier", Courier, sans-serif;
 	font-size: 1.5em;
 	font-weight: 500;
 	line-height: 40px;
@@ -27,43 +32,34 @@ h1 {
 h2 {
 	font-size: 1.25em;
 	color: #017B76;
-	font-family: "Courier", Courier, sans-serif;
-	font-weight: normal;
+	font-weight: 300;
 	margin: 0.83em 0 0;
 	padding: 10px 0px 10px 0px;
 }
 h3 {
-	/* color: #017B76; */
-	font-family: "Courier", Courier, sans-serif;
+	color: #017B76;
 	font-size: 1em;
 	font-weight: 500;
 	line-height: 32px;
 	margin-top: 4px;
 }
 h4 {
-	font-weight: bold;
+	font-weight: 700;
 	text-align: center;
 	margin: 1.33em 0;
 }
 h5 {
 	color: #666;
-	font-family: "Courier", Courier, sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 12px;
 }
 a {
 	color: #017B76;
-	font-family: "Courier", Courier, sans-serif;
 	text-decoration: underline;
 }
 a:hover {
 	color: #000000;
-}
-.fakelink {
-	color: #017B76;
-	text-decoration: underline;
-	font-family: "Courier", Courier, sans-serif;
 }
 hr {
 	border-top: thin solid #666;
@@ -90,7 +86,6 @@ hr {
 .nav a {
 	text-decoration: none;
 	color: #017B76;
-	font-family: "Courier", Courier, sans-serif;
 	text-align: center;
 	padding: 0 0.5em 0.5em 0.5em;
 	text-decoration: none;
